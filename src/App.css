@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -35,4 +37,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin: 5px;
+}
+
+.resumeLink {
+  text-decoration: none;
+  color: black;
 }

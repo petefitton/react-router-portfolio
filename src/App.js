@@ -25,6 +25,21 @@ let postArr = [
   }
 ]
 
+let projects = [
+  {
+    title: "My first Project",
+    content: "My first project was this thing."
+  },
+  {
+    title: "My second Project",
+    content: "Second Proj was another thing that was this thing."
+  },
+  {
+    title: "My third Project",
+    content: "My third proj was a proj that was this thing."
+  }
+]
+
 function App() {
   const [posts, setPosts] = useState(postArr);
 
@@ -40,7 +55,7 @@ function App() {
         <Route exact path="/" render={() => <Homepage />} />
         <Route path="/about" component={About} />
         <Route path="/blog" render={() => <Blog posts={posts} />} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/projects" render={() => <Projects projects={projects} />} />
         <Route path="/resume" />
     </div>
   </Router>
